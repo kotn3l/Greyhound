@@ -22,9 +22,9 @@
 #include "Parasyte.h"
 
 // Logger
-#include <spdlog/async.h>
-#include <spdlog/spdlog.h>
-#include <spdlog/sinks/basic_file_sink.h>
+//#include <spdlog/async.h>
+//#include <spdlog/spdlog.h>
+//#include <spdlog/sinks/basic_file_sink.h>
 
 // A list of supported Call of Duty games, or none for nothing loaded
 enum class SupportedGames
@@ -139,7 +139,7 @@ public:
     // The asset log, if any
     static std::unique_ptr<TextWriter> XAssetLogWriter;
     // The main runtime log
-    static std::shared_ptr<spdlog::logger> Log;
+    //static std::shared_ptr<spdlog::logger> Log;
     // The running game ID, if any
     static SupportedGames GameID;
     // The running game flags, if any

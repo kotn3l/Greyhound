@@ -113,6 +113,14 @@ int CreateAccessor(tinygltf::Model& GltfModel, int View, size_t Offset, size_t L
 
 void GLTF::ExportGLTF(const WraithModel& Model, const std::string& FileName, bool SupportsScale)
 {
+	BinaryWriter writer(testFilePath);
+	writer.WriteUint32(100);
+	writer.WriteFloat(512.0f);
+	writer.WriteNullTerminatedString("Hello binary!");
+
+
+
+
 	// TODO: Adjust types based off counts, so we're not writing 4 bytes per face
 	// or joint when it isn't necessary.
 

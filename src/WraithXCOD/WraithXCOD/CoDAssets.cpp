@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "spdlog/spdlog.h"
+//#include "spdlog/spdlog.h"
 
 // The class we are implementing
 #include "CoDAssets.h"
@@ -101,7 +101,7 @@ std::unique_ptr<ProcessReader> CoDAssets::GameInstance = nullptr;
 // Set the default logger pointer
 std::unique_ptr<TextWriter> CoDAssets::XAssetLogWriter = nullptr;
 // The main runtime log
-std::shared_ptr<spdlog::logger> CoDAssets::Log = nullptr;
+//std::shared_ptr<spdlog::logger> CoDAssets::Log = nullptr;
 
 // Set the default game id
 SupportedGames CoDAssets::GameID = SupportedGames::None;
@@ -2459,13 +2459,13 @@ void CoDAssets::ExportSelectedAssets(void* Caller, const std::unique_ptr<std::ve
                 // Export it
                 try
                 {
-                    CoDAssets::Log->info("Exporting: {0}...", Asset->AssetName);
+                    //CoDAssets::Log->info("Exporting: {0}...", Asset->AssetName);
                     Result = CoDAssets::ExportAsset(Asset);
-                    CoDAssets::Log->info("Successfully exported: {0}", Asset->AssetName);
+                    //CoDAssets::Log->info("Successfully exported: {0}", Asset->AssetName);
                 }
                 catch (std::exception& ex)
                 {
-                    CoDAssets::Log->error(ex.what());
+                    //CoDAssets::Log->error(ex.what());
                 }
 
 

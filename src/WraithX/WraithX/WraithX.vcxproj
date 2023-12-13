@@ -252,6 +252,9 @@
     <ClCompile Include="XXHash.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\External\BinaryTools-master\BinaryTools\BinaryTools.vcxproj">
+      <Project>{dc3d45c9-4e30-4e00-9e95-76fcf3754849}</Project>
+    </ProjectReference>
     <ProjectReference Include="..\..\External\DirectXTex\DirectXTex\DirectXTex_Desktop_2019_Win10.vcxproj">
       <Project>{371b9fa9-4c90-4ac6-a123-aced756d6c77}</Project>
     </ProjectReference>
